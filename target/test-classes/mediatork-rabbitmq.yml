@@ -1,0 +1,17 @@
+mediator:
+  paths:
+    - "com.cillu.mediator.integrationevents.config.single"
+    - "com.cillu.mediator.integrationevents.testutils.services"
+  messageBroker:
+    name: rabbitMq
+    rabbitMq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      useSslProtocol: false
+      exchangeName: platform_topic
+      queueName: microservice1
+      consumerRetryLimit: 5
+
+
